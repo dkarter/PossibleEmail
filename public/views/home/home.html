@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Welcome to Pfinder!</h1>
+			<form name="pfindForm" ng-submit="pfindForm.$valid && getPerson()" novalidate>
+				<input type="text" class="form-control" placeholder="First Name" ng-model="person.first" required>
+				<input type="text" class="form-control" placeholder="Last Name" ng-model="person.last" required>
+				<input type="text" class="form-control" placeholder="Domains" ng-model="person.domains" value="gmail.com" required>
+				<button class="btn btn-primary" ng-click="pfindForm.submit">Search</button>
+			</form>
+        </div>
+    </div>
+</div>
